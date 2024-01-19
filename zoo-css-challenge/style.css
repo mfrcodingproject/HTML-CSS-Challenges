@@ -76,6 +76,10 @@ footer {
 }
 
 .introduction {
+  background-color: white;
+}
+.introduction p {
+  line-height: 15px;
 }
 
 #badge {
@@ -85,18 +89,20 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
-
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+   transition: background-color 0.3s ease; 
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: #05f811; 
+  color: #211a1d;
 }
+
 
 #badge p {
   text-align: center;
@@ -110,30 +116,68 @@ footer {
 
 .image-container img:first-of-type {
   vertical-align: bottom;
+  border: 5px solid tomato;
+}
+
+.image-container img:nth-of-type(2) {
+
+  vertical-align: bottom;
+  border: 5px solid yellow;
+}
+
+.image-container img:nth-of-type(3) {
+
+  vertical-align: bottom;
+  border: 5px solid pink;
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
 }
 
 .tigers {
-  background-color: #0b3c49;
+  background-color: white;
   color: #f0e100;
 }
 
+.tigers ul li{
+  color: black;
+}
+
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #EEE62;
 }
 
 .giraffe h2 {
-  color: #ef6f6c;
+  color: #F4743B;
+  text-align: center;
 }
 
+.giraffe p:first-of-type{
+  font-size: 20px;
+}
+
+.news h2 {
+  display: block;
+  text-align: center;
+}
+
+.programs-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card {
-  display: inline-block;
+  display: inline-flex;
   background-color: white;
   padding: 20px;
   margin: 10px;
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
+  align-items: center;
 }
 
 .card h4 {
@@ -147,9 +191,24 @@ footer {
 
 .card time {
   opacity: 0.5;
-  display: inline-block;
+  display: inline-flx;
   margin-bottom: 10px;
 }
+.card-container{
+  display: flex;
+  justify-content: center;
+  
+}
+button{
+  padding: 40 50px;
+  font-size: larger;
+  border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: #6320ee;
+    color: #F4743B;
+  }
 
 /*Education*/
 
@@ -178,6 +237,10 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  max-width: 700px;
+  display: block;
+  margin-left: 00px;
+  margin-right: 100px;
 }
 
 .membership h2 {
@@ -191,5 +254,9 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: flex;
+}
+
+#logo {
+  border: none;
 }
